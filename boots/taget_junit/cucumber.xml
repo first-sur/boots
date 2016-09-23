@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="16.992787">
+<testcase classname="Register User for boots website" name="Register using DataTable" time="16.992787">
+<failure message="java.lang.Error: Unresolved compilation problem: &#10;&#9;sign_out cannot be resolved or is not a field&#10;&#13;&#10;&#9;at com.cucumber.boots.modules.SignoutAction.Execute(SignoutAction.java:16)&#13;&#10;&#9;at com.cucumber.boots.feature.web.user.Login.i_sign_out(Login.java:79)&#13;&#10;&#9;at ✽.Then I sign out(src/test/resources/features/user/RegisterUser.feature:8)&#13;&#10;"><![CDATA[Given user is on home page and clicks Register link.........................passed
+When she provides the email address as follows and click Register button....passed
+Then I sign out.............................................................failed
+
+StackTrace:
+java.lang.Error: Unresolved compilation problem: 
+	sign_out cannot be resolved or is not a field
+
+	at com.cucumber.boots.modules.SignoutAction.Execute(SignoutAction.java:16)
+	at com.cucumber.boots.feature.web.user.Login.i_sign_out(Login.java:79)
+	at ✽.Then I sign out(src/test/resources/features/user/RegisterUser.feature:8)
+]]></failure>
+</testcase>
+</testsuite>

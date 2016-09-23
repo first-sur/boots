@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4571540094,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StartingSteps.beforeScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Register using DataTable",
+        "description": "",
+        "id": "register-user-for-boots-website;register-using-datatable",
+        "after": [
+          {
+            "result": {
+              "duration": 980133528,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StartingSteps.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5919885547,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is on home page and clicks Register link",
+            "match": {
+              "location": "StartingSteps.clickRegisterLink()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5520103378,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "she provides the email address as follows and click Register button",
+            "match": {
+              "location": "Register.registerUser(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email"
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "soniakhetarpal@yahoo.com"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1124842,
+              "error_message": "java.lang.Error: Unresolved compilation problem: \n\tsign_out cannot be resolved or is not a field\n\r\n\tat com.cucumber.boots.modules.SignoutAction.Execute(SignoutAction.java:16)\r\n\tat com.cucumber.boots.feature.web.user.Login.i_sign_out(Login.java:79)\r\n\tat ✽.Then I sign out(src/test/resources/features/user/RegisterUser.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I sign out",
+            "match": {
+              "location": "Login.i_sign_out()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Register User for boots website",
+    "description": "",
+    "id": "register-user-for-boots-website",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/user/RegisterUser.feature"
+  }
+]
